@@ -7,4 +7,6 @@ import re
 
 print("hello there")
 
-print("bc" in "abcd")
+line = [c for c in "..123....."]
+
+print("".join(line[2:5]))

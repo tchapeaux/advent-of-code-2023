@@ -123,5 +123,5 @@ for idx, (line, hint) in enumerate(zip(lines, hints)):
 print("Part 2", sum(part2Sums))
 print(aoc.getTick())
 
-# Answer is too low for input
+# Answer is too low for input but works on all examples
 # Unfortunately I don't have more time to debug it :(

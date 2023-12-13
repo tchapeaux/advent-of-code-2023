@@ -5,7 +5,7 @@ import aoc
 Hint = tuple[int, ...]
 
 data = aoc.getLinesForDay(12)
-data = aoc.getLinesForDay(12, force_filepath="inputs/day12_example.txt")
+# data = aoc.getLinesForDay(12, force_filepath="inputs/day12_example.txt")
 # data = aoc.getLinesForDay(12, force_filepath="inputs/day12_one_line.txt")
 
 lines: list[str] = []
@@ -58,7 +58,7 @@ def countValidReplacements(line: str, hint: Hint) -> int:
         # print("must skip")
         return countValidReplacements(line[1:], hint)
     if len(pattern) == pattern.count("#") and firstCharAfterPattern == ".":
-        # Pattern is hardcoded, skip it
+        # Pattern is hardcoded, consume it
         # print("must consume (harcoded)")
         return countValidReplacements(line[firstPatternLength:], hint[1:])
 
